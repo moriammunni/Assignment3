@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment3-Milestone3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'button-bg': '#179800',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+
+        @keyframes textLoop {
+    0% { opacity: 0; transform: translateY(10px); }
+    25% { opacity: 1; transform: translateY(0px); }
+    75% { opacity: 1; transform: translateY(0px); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.animate-text {
+    display: inline-block;
+    animation: textLoop 3s infinite ease-in-out;
+}
+    </style>
 </head>
-<body>
-    
+
+<body class="font-sora">
+    <header class="bg-gradient-to-b from-gray-50 to-gray-200">
+         <!-- Navbar -->
+        <div class="mx-4 md:mx-24">
+            <div class="navbar mb-5 md:mb-20">
+                <div class="navbar-start">
+                    <a href="#" class="flex items-center">
+                        <img src="./c2-assets/logo-header.png" alt="Logo" class="h-10">
+                    </a>
+                </div>
+                <div class="navbar-end flex md:hidden">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-40 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Service</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+        
+                <div class="navbar-end hidden md:flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping ml-3"></i>
+                    <a class="btn ml-3">Login</a>
+                    <a class="btn bg-button-bg ml-3 text-white">Register</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Hero section/Banner section -->
+         <!-- <div>
+            <div class="text-center mb-8">
+                <h1 class="text-5xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+                    <p>
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+                    </p>
+
+            </div>
+            <img class=" mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
+         </div>
+          -->
+          <div>
+            <div class="text-center mb-8">
+                <h1 class="text-5xl font-semibold animate-text">
+                    <span class="text-[#179800]">Freshness You Can Count On, Prices You’ll Love!</span>
+                </h1>
+                <p>
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> 
+                    staples, we’ve got you covered every day!
+                </p>
+            </div>
+            <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="Vegetables">
+        </div>
+        
+    </header>
+    <main>
+        <section class="mt-36 mb-36">
+            <div class="text-center">
+                <h1 class="font-semibold text-5xl">Various Types Of Vegetables</h1>
+                <small class="font-semibold text-sm text-[#E76F51] border-b-2">Vegetables Collection</small>
+            </div>
+            <div class="mx-auto grid grid-cols-2 md:grid-cols-4 w-full  shadow-lg gap-3">
+                <div class="flex justify-center">
+                    <img class="bg-white w-full h-auto" src="./vegitables/v1.jpg" alt="Vegetable 1">
+                </div>
+                <div class="flex justify-center">
+                    <img class="bg-white w-full h-auto" src="./vegitables/v2.jpg" alt="Vegetable 2">
+                </div>
+                <div class="flex justify-center">
+                    <img class="bg-white w-full h-auto" src="./vegitables/v3.jpg" alt="Vegetable 3">
+                </div>
+                <div class="flex justify-center">
+                    <img class="bg-white w-full h-auto" src="./vegitables/v4.jpg" alt="Vegetable 4">
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
