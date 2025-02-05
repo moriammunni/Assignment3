@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment3-Milestone3</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -24,27 +26,42 @@
         }
     </script>
     <style>
-        .font-sora{
+        .font-sora {
             font-family: "Sora", serif;
         }
 
         @keyframes textLoop {
-    0% { opacity: 0; transform: translateY(10px); }
-    25% { opacity: 1; transform: translateY(0px); }
-    75% { opacity: 1; transform: translateY(0px); }
-    100% { opacity: 0; transform: translateY(-10px); }
-}
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
 
-.animate-text {
-    display: inline-block;
-    animation: textLoop 3s infinite ease-in-out;
-}
+            25% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+            75% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-text {
+            display: inline-block;
+            animation: textLoop 3s infinite ease-in-out;
+        }
     </style>
 </head>
 
 <body class="font-sora">
     <header class="bg-gradient-to-b from-gray-50 to-gray-200">
-         <!-- Navbar -->
+        <!-- Navbar -->
         <div class="mx-4 md:mx-24">
             <div class="navbar mb-5 md:mb-20">
                 <div class="navbar-start">
@@ -61,14 +78,15 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-40 p-2 shadow">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-40 p-2 shadow">
                             <li><a>Product</a></li>
                             <li><a>Service</a></li>
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
-        
+
                 <div class="navbar-center hidden md:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Product</a></li>
@@ -76,7 +94,7 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-        
+
                 <div class="navbar-end hidden md:flex">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping ml-3"></i>
@@ -85,10 +103,10 @@
                 </div>
             </div>
         </div>
-        
+
 
         <!-- Hero section/Banner section -->
-         <!-- <div>
+        <!-- <div>
             <div class="text-center mb-8">
                 <h1 class="text-5xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
                     Count</span> On, Prices You’ll Love!</h1>
@@ -100,19 +118,19 @@
             <img class=" mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
          </div>
           -->
-          <div>
+        <div>
             <div class="text-center mb-8">
                 <h1 class="text-5xl font-semibold animate-text">
                     <span class="text-[#179800]">Freshness You Can Count On, Prices You’ll Love!</span>
                 </h1>
                 <p>
-                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> 
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
                     staples, we’ve got you covered every day!
                 </p>
             </div>
             <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="Vegetables">
         </div>
-        
+
     </header>
     <main>
         <section class="mt-36 mb-36">
@@ -135,60 +153,200 @@
                 </div>
             </div>
         </section>
-         <!-- card -->
-          <section class="mb-24 lg:w-[1300px] lg:mx-auto lg:space-x-6  lg:flex">
+        <section class=" lg:w-[1300px] lg:mx-auto">
+            <h2 class="font-semibold text-[#179800] text-3xl mb-6">Services</h2>
+            <!-- card -->
+            <div class="mb-24  lg:space-x-6  lg:flex mx-auto">
+
                 <!-- card1 -->
                 <div class="card bg-[#EFEBE3] w-96 shadow-xl mb-3">
                     <figure class="px-10 pt-10">
-                      <img class="bg-white p-5 rounded-full"
-                        src="./c2-assets/service.png"
-                        alt=""
-                        class="rounded-xl" />
+                        <img class="bg-white p-5 rounded-full" src="./c2-assets/service.png" alt=""
+                            class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">24/7 Services </h2>
-                      <p> which is why our services are available 24/7. Whether it's day or night, weekday or weekend, we’re always ready to assist you.</p>
-                      <div class="card-actions">
+                        <h2 class="card-title">24/7 Services </h2>
+                        <p> which is why our services are available 24/7. Whether it's day or night, weekday or weekend,
+                            we’re always ready to assist you.</p>
+                        <div class="card-actions">
 
-                      </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
 
-                  <!-- card2 -->
+                <!-- card2 -->
                 <div class="card bg-[#EFEBE3] w-96 shadow-xl mb-3">
                     <figure class="px-10 pt-10">
-                      <img class="bg-white p-5 rounded-full"
-                        src="./c2-assets/delivery.png"
-                        alt=""
-                        class="rounded-xl" />
+                        <img class="bg-white p-5 rounded-full" src="./c2-assets/delivery.png" alt=""
+                            class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Fast Delivery </h2>
-                      <p> We ensure lightning-fast delivery, so you get your essentials right when you need them. Our efficient system guarantees on-time arrivals, keeping your schedule hassle-free. </p>
-                      <div class="card-actions">
+                        <h2 class="card-title">Fast Delivery </h2>
+                        <p> We ensure lightning-fast delivery, so you get your essentials right when you need them. Our
+                            efficient system guarantees on-time arrivals, keeping your schedule hassle-free. </p>
+                        <div class="card-actions">
 
-                      </div>
+                        </div>
                     </div>
-                  </div>
-                  <!-- card3 -->
+                </div>
+                <!-- card3 -->
                 <div class="card bg-[#EFEBE3] w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                      <img class="bg-white p-5 rounded-full"
-                        src="./c2-assets/healthy.png"
-                        alt=""
-                        class="rounded-xl" />
+                        <img class="bg-white p-5 rounded-full" src="./c2-assets/healthy.png" alt=""
+                            class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Healthy Products  </h2>
-                      <p> We offer fresh, organic, and high-quality products to support your healthy lifestyle. From farm-fresh vegetables to nutrient-rich essentials, every item is carefully selected to ensure purity, freshness, and goodness.</p>
-                      <div class="card-actions">
+                        <h2 class="card-title">Healthy Products </h2>
+                        <p> We offer fresh, organic, and high-quality products to support your healthy lifestyle. From
+                            farm-fresh vegetables to nutrient-rich essentials, every item is carefully selected to
+                            ensure purity, freshness, and goodness.</p>
+                        <div class="card-actions">
 
-                      </div>
+                        </div>
                     </div>
-                  </div>
-            
-          </section>
+                </div>
 
+            </div>
+
+        </section>
+        <section class="bg-[#EFEBE3] mb-24 px-4">
+            <div class="w-full max-w-[1300px] mx-auto py-14">
+                <h1 class="font-semibold text-3xl text-[#179800] mb-8 mt-24">Popular Products</h1>
+
+                <div class="flex flex-wrap justify-center gap-6">
+                    <!-- Offer Card -->
+                    <div class="w-full md:w-[420px] bg-gradient-to-r from-green-500 to-white rounded-xl p-6">
+                        <h1 class="text-white font-bold text-4xl mb-5">30% Off</h1>
+                        <p class="mb-5">Discovered a world of treats, toys, and <br> essentials handpicked for you.</p>
+                        <button class="btn">Buy Now</button>
+                        <div class="flex justify-end">
+                            <img src="./c2-assets/vegetable-offer.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4  ">
+                        <!-- Onion -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/onion.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Onion 1KG</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Tomato -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/tomato.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Tomato 500g</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Potato -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/potato.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Potato 1 KG</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Tomato Again -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/tomato.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Tomato 500g</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Onion Again -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/onion.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Onion 1KG</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Tomato Again -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/tomato.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Tomato 500g</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Onion Again -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/onion.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Onion 1KG</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Potato Again -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/potato.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Potato 1 KG</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        <!-- Potato Again -->
+                        <div class="flex bg-white w-[270px] h-[110px] rounded-lg">
+                            <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/potato.png" alt="">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                                    <small>4.5</small>
+                                </div>
+                                <small class="font-medium text-lg">Potato 1 KG</small><br>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
