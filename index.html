@@ -36,28 +36,22 @@
         @keyframes textLoop {
             0% {
                 opacity: 0;
-                transform: translateY(10px);
+                transform: translateY(-10px);
             }
 
-            25% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-
-            75% {
+            50% {
                 opacity: 1;
                 transform: translateY(0px);
             }
 
             100% {
                 opacity: 0;
-                transform: translateY(-10px);
+                transform: translateY(10px);
             }
         }
 
-        .animate-text {
-            display: inline-block;
-            animation: textLoop 3s infinite ease-in-out;
+        .animate-textLoop {
+            animation: textLoop 2s infinite alternate ease-in-out;
         }
     </style>
 </head>
@@ -109,30 +103,20 @@
 
 
         <!-- Hero section/Banner section -->
-        <!-- <div>
+        <div>
             <div class="text-center mb-8">
-                <h1 class="text-5xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
-                    Count</span> On, Prices You’ll Love!</h1>
-                    <p>
-                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
-                    </p>
+                <h1 class="text-5xl animate-textLoop ">Freshness <span class="text-[#179800]">You Can <br>
+                        Count</span> On, Prices You’ll Love!</h1>
+                <p>
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve
+                    got you covered every day!
+                </p>
 
             </div>
             <img class=" mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
-         </div>
-          -->
-        <div>
-            <div class="text-center mb-8">
-                <h1 class="text-5xl font-semibold animate-text">
-                    <span class="text-[#179800]">Freshness You Can Count On, Prices You’ll Love!</span>
-                </h1>
-                <p>
-                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
-                    staples, we’ve got you covered every day!
-                </p>
-            </div>
-            <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="Vegetables">
         </div>
+
+
 
     </header>
     <main>
@@ -228,17 +212,18 @@
                     </div>
 
                     <!-- Products Grid -->
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-4  ">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-4 mt-4  ">
                         <!-- Onion -->
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/onion.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
-                                    <small>4.5</small>
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
+                                    <small>3.5</small>
                                 </div>
-                                <small class="font-medium text-lg">Onion 1KG</small><br>
-                                <small>$39.99</small>
+                                <small class="font-medium text-lg">Onion 1 KG</small><br>
+                                <small>$40.99</small>
+
                             </div>
                         </div>
 
@@ -246,12 +231,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/tomato.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
                                     <small>4.5</small>
                                 </div>
-                                <small class="font-medium text-lg">Tomato 500g</small><br>
+                                <small class="font-medium text-lg">Tomato 1 KG</small><br>
                                 <small>$39.99</small>
+
                             </div>
                         </div>
 
@@ -259,12 +245,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/potato.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
                                     <small>4.5</small>
                                 </div>
                                 <small class="font-medium text-lg">Potato 1 KG</small><br>
                                 <small>$39.99</small>
+
                             </div>
                         </div>
 
@@ -272,12 +259,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/tomato.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
                                     <small>4.5</small>
                                 </div>
-                                <small class="font-medium text-lg">Tomato 500g</small><br>
+                                <small class="font-medium text-lg">Tomato 1 KG</small><br>
                                 <small>$39.99</small>
+
                             </div>
                         </div>
 
@@ -285,12 +273,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/onion.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
                                     <small>4.5</small>
                                 </div>
-                                <small class="font-medium text-lg">Onion 1KG</small><br>
-                                <small>$39.99</small>
+                                <small class="font-medium text-lg">Onion 1 KG</small><br>
+                                <small>$49.99</small>
+
                             </div>
                         </div>
 
@@ -298,12 +287,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/tomato.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
-                                    <small>4.5</small>
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
+                                    <small>5.5</small>
                                 </div>
-                                <small class="font-medium text-lg">Tomato 500g</small><br>
-                                <small>$39.99</small>
+                                <small class="font-medium text-lg">Tomato 1 KG</small><br>
+                                <small>$59.99</small>
+
                             </div>
                         </div>
 
@@ -311,12 +301,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/onion.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
-                                    <small>4.5</small>
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
+                                    <small>3.5</small>
                                 </div>
-                                <small class="font-medium text-lg">Onion 1KG</small><br>
-                                <small>$39.99</small>
+                                <small class="font-medium text-lg">Onion 1 KG</small><br>
+                                <small>$49.99</small>
+
                             </div>
                         </div>
 
@@ -324,12 +315,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/potato.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
                                     <small>4.5</small>
                                 </div>
                                 <small class="font-medium text-lg">Potato 1 KG</small><br>
                                 <small>$39.99</small>
+
                             </div>
                         </div>
 
@@ -337,12 +329,13 @@
                         <div class="flex bg-white lg:w-[270px] h-[110px] rounded-lg">
                             <img class="bg-gray-300 rounded-lg m-4" src="./c2-assets/potato.png" alt="">
                             <div>
-                                <div class="rating">
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                                <div class="flex mt-4 ">
+                                    <i class="text-orange-500  fa-solid fa-star"></i>
                                     <small>4.5</small>
                                 </div>
                                 <small class="font-medium text-lg">Potato 1 KG</small><br>
                                 <small>$39.99</small>
+
                             </div>
                         </div>
 
@@ -353,13 +346,18 @@
 
 
         <!-- Arrival and Offer  -->
-        <section class=" lg:w-[1300px] lg:mx-auto">
+         
+
+
+
+
+        <section class=" lg:w-[1300px] lg:mx-auto mb-[400px]">
             <h2 class="font-semibold text-[#179800] text-3xl mb-6">Arrival & Offer</h2>
             <!-- card -->
             <div class="mb-24  lg:space-x-6  lg:flex mx-auto">
 
                 <!-- card1 -->
-                <div class="flex bg-[#115414] rounded-xl mb-3 pt-8 lg:w-[770px]">
+                <div class="flex bg-[#115414] rounded-xl mb-3 pt-8 lg:w-[750px] h-[340px]">
                     <div>
                         <div class="ml-10">
                             <img class="mb-6 mt-2" src="./c2-assets/dawat-logo.png" alt="">
@@ -369,14 +367,14 @@
 
                     </div>
                     <!-- img -->
-                    <div>
-                        <img src="./c2-assets/dawat-mock-up.png" alt="">
+                    <div class=" flex justify-end w-full">
+                        <img  src="./c2-assets/dawat-mock-up.png" alt="">
                     </div>
                 </div>
 
 
                 <!-- card2 -->
-                <div class="flex bg-[#102861] rounded-xl pt-8">
+                <div class="flex bg-[#102861] rounded-xl pt-6 h-[340px] w-[500px] ">
                     <div class="pl-4">
                         <img class="mb-6 mt-2" src="./c2-assets/india-gate-logo.png" alt="">
                         <button class="btn ml-8 text-white bg-[#2A4D97] mb-6">Cook Exotic Dishes</button>
@@ -394,13 +392,13 @@
 
         </section>
     </main>
-    
 
 
 
 
-    <footer class="">
-        <section class="bg-[#EFEBE3] lg:h-[450px] lg:w-[1320px] mx-auto rounded-3xl ">
+    <section class="relative">
+        <div
+            class="bg-[#EFEBE3] lg:h-[450px] lg:w-[1320px] mx-auto rounded-3xl absolute -top-[40%] ml-[50%]  -translate-x-[50%]">
             <div class="lg:flex px-[80px]">
                 <div>
                     <img src="./c2-assets/vegetable-busket.png" alt="">
@@ -415,13 +413,14 @@
 
                     <br>
                     <button class="btn text-white
-                    bg-[#179800] ">Subscribe</button>
+                bg-[#179800] ">Subscribe</button>
 
                 </div>
             </div>
 
-        </section>
+        </div>
         <footer class="footer bg-[#179800] text-white p-10 h-[600px] lg:px-[140px] lg:pt-[370px] ">
+
             <nav>
                 <img src="./c2-assets/logo-footer.png" alt="">
                 <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
@@ -462,8 +461,51 @@
                 </div>
             </nav>
         </footer>
+    </section>
 
+    <footer class="footer bg-[#179800] text-white p-10 h-[600px] lg:px-[140px] lg:pt-[370px] ">
+
+        <nav>
+            <img src="./c2-assets/logo-footer.png" alt="">
+            <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+        </nav>
+        <nav class="space-y-4">
+            <a class="link link-hover">Product</a>
+            <a class="link link-hover">Services</a>
+            <a class="link link-hover">Contact Us</a>
+
+        </nav>
+        <nav class=" lg:ml-[350px] mt-14">
+            <h3>Follow Us</h3>
+            <div class="grid grid-flow-col gap-4">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
     </footer>
+
 
 </body>
 
